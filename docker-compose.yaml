@@ -1,0 +1,10 @@
+version: '3'
+services:
+  teleproxy:
+    image: ghcr.io/bboysoulcn/teleproxy:latest
+    restart: always
+    container_name: teleproxy
+    ports:
+      - 8000:8000
+    volumes:
+      - /etc/localtime:/etc/localtime
