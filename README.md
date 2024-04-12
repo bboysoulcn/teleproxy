@@ -2,13 +2,19 @@
 
 Teleproxy 是一个使用 FastAPI 构建的应用，它将 HTTP 请求转发到 Telegram API。
 
-## 安装
+## 安装使用
 
-pass
+clone 这个项目：
 
-## 运行应用
+```bash
+git clone https://github.com/bboysoulcn/telemonitor.git
+```
 
-pass
+你可以使用docker compose 来运行 Telemonitor：
+
+```bash
+docker-compose up -d
+```
 
 ## 许可证
 
