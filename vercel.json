@@ -1,0 +1,6 @@
+{
+  "name": "teleproxy",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/main" }
+  ]
+}
