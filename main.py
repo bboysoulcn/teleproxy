@@ -26,6 +26,9 @@ async def forward_request(request: Request, path: str):
         response = httpx.post(new_url, headers=headers, timeout=1000)
     return JSONResponse(response.json())
 
+@app.get("/")
+async def hello_world():
+    return "Hello World"
 
 if __name__ == '__main__':
     uvicorn.run(app='main:app', port=8000, host="0.0.0.0", workers=5)
